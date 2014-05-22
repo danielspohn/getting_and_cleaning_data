@@ -1,3 +1,5 @@
+##Fields
+
 The file tidy_data_set.txt contains the following columns:
 
 - `subject` - This field contains the subject id
@@ -68,4 +70,16 @@ The file tidy_data_set.txt contains the following columns:
 - `fBodyBodyGyroMagstd`
 - `fBodyBodyGyroJerkMagmean`
 - `fBodyBodyGyroJerkMagstd`
+
+## Data Transformations
+The scripts works as follows:
+- Load x test and train datasets into R. These datasets contain all the measurement variables for both the testing and training datasets.
+- Load the y test and train datasets into R. These datasets contain the activity that each record in the x datasets belong to.
+- Load the subject datasets into R, and add the subject column from it, onto the corresponding x test and train datasets.
+- Add the descriptive Activity name column to the x test and train datasets from the previously loaded activity dataset.
+- Merge the test and training datasets
+- Create a new dataset which contains on the subject, activity and the columns that have mean and standard deviation in the column names
+- Clean up the column names in the new dataset, so that they do not contain parentheses or hyphens
+- Write out the new dataset to a file
+- Create an additional tidy dataset which has the Mean values for every variable grouped by the subject and activity.
 
