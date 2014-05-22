@@ -1,6 +1,6 @@
 The file tidy_data_set.txt contains the following columns:
 
--`subject`
+- `subject`
 -`activity`
 -`tBodyAccmeanX`
 -`tBodyAccmeanY`
